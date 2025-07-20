@@ -9,7 +9,7 @@ apihelper.CONNECTION_TIMEOUT = 30
 BOT_TOKEN = "8165194741:AAEHi3W8ZYZIzHHPBXUN1Kkk0r4zK-mtIDk"
 OWNER_ID = 6896590701  # Your Telegram User ID
 
-bot = telebot.TeleBot(BOT_TOKEN, timeout=60)
+bot = telebot.TeleBot(BOT_TOKEN)
 
 @bot.message_handler(commands=['start'])
 def start(message):
