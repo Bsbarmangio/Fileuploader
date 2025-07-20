@@ -1,13 +1,15 @@
 import requests
 import telebot
 import os
-from telebot import apihelper
+from telebot import apihelper  # ✅ Timeout fix
 
+# Set Telegram API timeouts (compatible with older pyTelegramBotAPI versions)
 apihelper.READ_TIMEOUT = 60
 apihelper.CONNECTION_TIMEOUT = 30
 
-BOT_TOKEN = "8165194741:AAEHi3W8ZYZIzHHPBXUN1Kkk0r4zK-mtIDk"
-OWNER_ID = 6896590701  # Your Telegram User ID
+BOT_TOKEN = "7835124466:AAGhfA1yKweBuHb8ukov550OeqRTtfNRh8c"
+
+OWNER_ID = 6896590701
 
 bot = telebot.TeleBot(BOT_TOKEN)
 
